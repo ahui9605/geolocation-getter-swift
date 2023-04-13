@@ -13,6 +13,7 @@ Make sure to add and build the connection with these two UILabels and a map view
 @IBOutlet weak var mapView: MKMapView!
 ```
 
+#### **Privacy Access**
 Make sure to include the following in your project configuration to grant privacy access to the phone. This is necessary to obtain the user's geolocation information.
 ![image](img/privacy.png)
 
@@ -28,6 +29,6 @@ To use these two view controllers in your own project, simply copy the **Geoloca
 
 ## Demo
 
-<video width="640" height="360" controls>
-  <source src="img/demo.mp4" type="video/mp4">
-</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/l29UsLSiTWQ" title="Geolocation Getter Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Alternative Link to watch demo: https://www.youtube.com/embed/l29UsLSiTWQ
