@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Geolocation Without MapVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GeolocationWithoutMapVC" customModule="geolocation_getter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0N-i6-2Jb">
+                                <rect key="frame" x="133" y="109" width="127.33333333333331" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="AS8-R7-7EK">
+                                <rect key="frame" x="156" y="179.33333333333334" width="81" height="60.666666666666657"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latitude: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNL-jY-sld">
+                                        <rect key="frame" x="0.0" y="0.0" width="81" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Longitude:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LlA-ea-cqI">
+                                        <rect key="frame" x="0.0" y="40.333333333333314" width="81" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lKV-cw-apA">
+                                <rect key="frame" x="0.0" y="344" width="393" height="474"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AS8-R7-7EK" firstAttribute="top" secondItem="f0N-i6-2Jb" secondAttribute="bottom" constant="50" id="55l-MH-vNC"/>
+                            <constraint firstItem="lKV-cw-apA" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="8Dc-1V-lxR"/>
+                            <constraint firstItem="lKV-cw-apA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EZa-Jy-N9L"/>
+                            <constraint firstItem="f0N-i6-2Jb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="EaA-UB-EBA"/>
+                            <constraint firstItem="lKV-cw-apA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="EaI-Oh-WfQ"/>
+                            <constraint firstItem="f0N-i6-2Jb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GXL-Op-TVe"/>
+                            <constraint firstItem="lKV-cw-apA" firstAttribute="top" secondItem="AS8-R7-7EK" secondAttribute="bottom" constant="200" id="KvD-4z-Udn"/>
+                            <constraint firstItem="AS8-R7-7EK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bu8-mf-siP"/>
+                            <constraint firstItem="lKV-cw-apA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gPQ-UM-BaI"/>
+                            <constraint firstItem="lKV-cw-apA" firstAttribute="top" secondItem="AS8-R7-7EK" secondAttribute="bottom" constant="104" id="sOL-mN-yeJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelLatitude" destination="vNL-jY-sld" id="OU0-qk-KWs"/>
+                        <outlet property="labelLongitude" destination="LlA-ea-cqI" id="6zJ-gu-rXi"/>
+                        <outlet property="mapView" destination="lKV-cw-apA" id="VQn-28-4eX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
