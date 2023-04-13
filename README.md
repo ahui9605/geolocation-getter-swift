@@ -25,6 +25,7 @@ This view controller displays the user's current location on a map view, as well
 This view controller displays the user's current latitude and longitude coordinates in UILabels without a map view. It uses the CLLocationManagerDelegate protocol to update the user's location.
 
 ![image](img/customClass.png)
+----------------------------------------------------------------
 To use these two view controllers in your own project, simply copy the **GeolocationWithMapVC.swift/GeolocationWithoutMapVC** file into your Xcode project and add a new view controller to your storyboard. Then, set the custom class of the view controller to GeolocationWithMapVC in the Identity Inspector tab of the Utilities panel. 
 
 ## Demo
