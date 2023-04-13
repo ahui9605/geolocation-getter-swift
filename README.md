@@ -29,6 +29,7 @@ To use these two view controllers in your own project, simply copy the **Geoloca
 
 ## Demo
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/l29UsLSiTWQ" title="Geolocation Getter Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/l29UsLSiTWQ" frameborder="0" allowfullscreen></iframe>
+
 
 Alternative Link to watch demo: https://www.youtube.com/embed/l29UsLSiTWQ
