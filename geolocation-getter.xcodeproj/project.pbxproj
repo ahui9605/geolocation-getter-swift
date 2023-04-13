@@ -13,8 +13,8 @@
 		0F39B64029E85F380082EB45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F39B63E29E85F380082EB45 /* Main.storyboard */; };
 		0F39B64229E85F390082EB45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F39B64129E85F390082EB45 /* Assets.xcassets */; };
 		0F39B64529E85F390082EB45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F39B64329E85F390082EB45 /* LaunchScreen.storyboard */; };
-		0F39B64E29E85F860082EB45 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F39B64D29E85F860082EB45 /* CoreLocation.framework */; };
 		0F39B65029E86D470082EB45 /* GeolocationWithoutMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F39B64F29E86D470082EB45 /* GeolocationWithoutMapVC.swift */; };
+		0F39B65129E8754D0082EB45 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F39B64D29E85F860082EB45 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F39B64E29E85F860082EB45 /* CoreLocation.framework in Frameworks */,
+				0F39B65129E8754D0082EB45 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
